@@ -12,7 +12,7 @@ This guide outlines setting up an Nginx Proxy Manager using Docker, specifically
 
 ## Step 1: Set Up the Docker Compose File with a `macvlan` Network
 
-Create the following folders under the default docker directory (e.g. `/docker`).
+On the NAS, create the following folders under the default docker directory (e.g. `/docker`).
 - /docker/npm
   - /docker/npm/data
   - /docker/npm/letsencrypt
@@ -48,5 +48,20 @@ networks:
           ip_range: "192.168.0.1/32"
           gateway: "192.168.0.1"
 ```
+## Notes:
+- Replace eth1 with the appropriate interface for your setup.
+- Ensure that 192.168.0.254 is not already in use on your network.
 
+## Step 2: Configure DuckDNS
+- Sign up for an account on DuckDNS.
+- Create a subdomain (e.g., yourdomain.duckdns.org).
+- Copy your `token`
+
+## Step 3: Add Let's Encrypt Certificates to `Nginx Proxy Manager`
+- Access `Nginx Proxy Manager` via http://192.168.0.254:81(http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `change`. Once logged in, update your credentials. 
+
+## Important:
+- When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in two individual requests. Combining them often results in errors.
+- Use the DNS challenge to validate ownership via DuckDNS.
+- Paste your `token` into the box such that `dns_duckdns_token=``token`.
 
