@@ -3,7 +3,7 @@ This guide outlines setting up an Nginx Proxy Manager using Docker, specifically
 
 ## Prerequisites
 - Synology NAS or equivalent with at least two Ethernet interfaces.
-- Docker and Docker Compose installed.
+- Container Manager or Docker Compose installed.
 - An account on DuckDNS.org
 
 ## Key Highlights of this Setup
@@ -62,6 +62,9 @@ networks:
 
 ## Important:
 - When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in two individual requests. Combining them often results in errors.
-- Use the DNS challenge to validate ownership via DuckDNS.
-- Paste your `token` into the box such that `dns_duckdns_token=``token`.
+- Use the `DNS challenge` to validate ownership via DuckDNS.
+- Paste your `token` into the `Credentials File Content` box like `dns_duckdns_token=token`.
+
+## Step 4: Deploy the Container
+Save and build the project in Container Manager or run `docker-compose up -d`.
 
