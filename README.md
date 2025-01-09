@@ -58,6 +58,7 @@ networks:
 - Copy your `token`
 
 ## Step 3: Add `Let's Encrypt` Certificates to `Nginx Proxy Manager`
+- Save and build the project in Container Manager or run `docker-compose up -d`.
 - Access `Nginx Proxy Manager` via [http://192.168.0.254:81](http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `changeme`. Once logged in, update your credentials. 
 
 ## Important:
@@ -65,7 +66,4 @@ networks:
 - Use the `DNS challenge` to validate ownership via DuckDNS.
 - Paste your `token` into the `Credentials File Content` box like `dns_duckdns_token=token`.
 - Set the timeout value to 120 seconds or more.
-
-## Step 4: Deploy the Container
-Save and build the project in Container Manager or run `docker-compose up -d`.
 
