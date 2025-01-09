@@ -64,6 +64,7 @@ networks:
 - When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in two individual requests. Combining them often results in errors.
 - Use the `DNS challenge` to validate ownership via DuckDNS.
 - Paste your `token` into the `Credentials File Content` box like `dns_duckdns_token=token`.
+- Set the timeout value to 120 seconds or more.
 
 ## Step 4: Deploy the Container
 Save and build the project in Container Manager or run `docker-compose up -d`.
