@@ -53,7 +53,7 @@ networks:
 - Ensure that `192.168.0.254` is not already used on your network.
 
 ## Step 2: Configure DuckDNS
-- Sign up for an account on [DuckDNS](www.duckdns.org).
+- Sign up for an account on [DuckDNS](http://www.duckdns.org).
 - Create a subdomain (e.g., yourdomain.duckdns.org).
 - Copy your `token`
 
