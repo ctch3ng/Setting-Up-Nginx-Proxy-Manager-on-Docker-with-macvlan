@@ -58,7 +58,7 @@ networks:
 - Copy your `token`
 
 ## Step 3: Add Let's Encrypt Certificates to `Nginx Proxy Manager`
-- Access `Nginx Proxy Manager` via [http://192.168.0.254:81](http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `change`. Once logged in, update your credentials. 
+- Access `Nginx Proxy Manager` via [http://192.168.0.254:81](http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `changeme`. Once logged in, update your credentials. 
 
 ## Important:
 - When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in two individual requests. Combining them often results in errors.
