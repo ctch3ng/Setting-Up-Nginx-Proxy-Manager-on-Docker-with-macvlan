@@ -53,11 +53,11 @@ networks:
 - Ensure that `192.168.0.254` is not already used on your network.
 
 ## Step 2: Configure DuckDNS
-- Sign up for an account on DuckDNS.
+- Sign up for an account on [DuckDNS](www.duckdns.org).
 - Create a subdomain (e.g., yourdomain.duckdns.org).
 - Copy your `token`
 
-## Step 3: Add Let's Encrypt Certificates to `Nginx Proxy Manager`
+## Step 3: Add `Let's Encrypt` Certificates to `Nginx Proxy Manager`
 - Access `Nginx Proxy Manager` via [http://192.168.0.254:81](http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `changeme`. Once logged in, update your credentials. 
 
 ## Important:
