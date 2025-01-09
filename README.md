@@ -49,8 +49,8 @@ networks:
           gateway: "192.168.0.1"
 ```
 ## Notes:
-- Replace eth1 with the appropriate interface for your setup.
-- Ensure that 192.168.0.254 is not already in use on your network.
+- Replace `eth1` with the appropriate interface for your setup.
+- Ensure that `192.168.0.254` is not already used on your network.
 
 ## Step 2: Configure DuckDNS
 - Sign up for an account on DuckDNS.
