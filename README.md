@@ -62,8 +62,19 @@ networks:
 - Access `Nginx Proxy Manager` via [http://192.168.0.254:81](http://192.168.0.254:81). The default username is `admin@example.com`, and the password is `changeme`. Once logged in, update your credentials. 
 
 ## Important:
-- When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in two individual requests. Combining them often results in errors.
+- When configuring `Let's Encrypt` certificates, add `yourdomain.duckdns.org` and `*.yourdomain.duckdns.org` in <ins>two</ins> individual requests. <ins>Combining them often results in errors</ins>.
 - Use the `DNS challenge` to validate ownership via DuckDNS.
 - Paste your `token` into the `Credentials File Content` box like `dns_duckdns_token=token`.
 - Set the timeout value to 120 seconds or more.
 
+## Step 4: Adding Proxy Hosts
+
+- When adding a proxy host, ensure you configure WebSocket support for applications such as `Unraid` and `OpenWeb UI`, which rely on WebSocket connections for features such as live updates, real-time monitoring, or interactive interfaces. This setting is essential for these applications to function correctly through the Nginx Proxy Manager.
+
+- To enable Web Socket support:
+
+  - Navigate to Proxy Hosts in the admin interface.
+
+  - Edit or create a new proxy host for the desired application.
+
+  - Under the `Details` tab, check the option to enable Web Socket support.
